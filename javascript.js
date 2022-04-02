@@ -15,7 +15,10 @@ function convertInput () {
     return userInput.toLowerCase()
 }
 function checkInput () {
-    
+    if (convertInput() === rock || convertInput() === paper || convertInput() === scissor) {
+        return true
+    }
+    else false
 }
 
 function playRound (playerSelection, computerSelection) {
