@@ -25,7 +25,9 @@ function checkInput () {
     else if (convertInput() === 'scissor') {
         return 'Scissor'
     }
-    else false
+    else {
+        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
+    }
 }
 
 function playRound () {
