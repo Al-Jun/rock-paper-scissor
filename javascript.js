@@ -50,6 +50,9 @@ function playRound (playerSelection, computerSelection) {
     else if (playerSelection === 'Paper' && computerSelection === 'Scissor') {
         return `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
+    else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
+        return `You Win!. ${playerSelection} beats ${computerSelection}.`
+    }
 }
 
 let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
