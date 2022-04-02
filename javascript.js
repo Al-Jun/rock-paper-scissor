@@ -11,6 +11,9 @@ function computerPlay() {
     }
 }
 
+function convertInput () {
+    return userInput.toLowerCase()
+}
 function checkInput () {
     
 }
