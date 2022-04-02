@@ -17,13 +17,13 @@ function convertInput () {
 
 function checkInput () {
     if (convertInput() === 'rock') {
-        userInput = 'Rock'
+        return 'Rock'
     }
     else if (convertInput() === 'paper') {
-        userInput = 'Paper'
+        return 'Paper'
     }
     else if (convertInput() === 'scissor') {
-        userInput = 'Scissor'
+        return 'Scissor'
     }
     else false
 }
