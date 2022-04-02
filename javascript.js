@@ -33,7 +33,7 @@ function playRound (playerSelection, computerSelection) {
     computerSelection = computerPlay()
 
     if (playerSelection === computerPlay) {
-        return `You tie!. ${playerSelection} and ${computerSelection} are equal.`
+        return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
     else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
         return `You Lose!. ${computerSelection} beats ${playerSelection}.`
