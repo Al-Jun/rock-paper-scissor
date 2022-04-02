@@ -11,6 +11,10 @@ function computerPlay() {
     }
 }
 
+function checkInput () {
+    
+}
+
 function playRound (playerSelection, computerSelection) {
     
 }
