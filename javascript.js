@@ -14,9 +14,16 @@ function computerPlay() {
 function convertInput () {
     return userInput.toLowerCase()
 }
+
 function checkInput () {
-    if (convertInput() === rock || convertInput() === paper || convertInput() === scissor) {
-        return true
+    if (convertInput() === 'rock') {
+        userInput = 'Rock'
+    }
+    else if (convertInput() === 'paper') {
+        userInput = 'Paper'
+    }
+    else if (convertInput() === 'scissor') {
+        userInput = 'Scissor'
     }
     else false
 }
