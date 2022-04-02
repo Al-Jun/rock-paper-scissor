@@ -1,12 +1,12 @@
 function computerPlay() {
     const rps = Math.floor(Math.random()*10)
-    if (rps >= 1 && rps <= 3) {
+    if (rps >= 0 && rps <= 2) {
         return 'Rock'
     }
-    else if (rps >= 4 && rps <= 6) {
+    else if (rps >= 3 && rps <= 5) {
         return 'Paper'
     }
-    else if (rps >= 7 && rps <= 9) {
+    else if (rps >= 6 && rps <= 8) {
         return 'Scissor'
     }
 }
