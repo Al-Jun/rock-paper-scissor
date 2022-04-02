@@ -28,9 +28,9 @@ function checkInput () {
     else false
 }
 
-function playRound (playerSelection, computerSelection) {
-    playerSelection = checkInput()
-    computerSelection = computerPlay()
+function playRound () {
+    let playerSelection = checkInput()
+    let computerSelection = computerPlay()
 
     if (playerSelection === computerPlay) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
