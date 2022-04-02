@@ -14,3 +14,5 @@ function computerPlay() {
 function playRound (playerSelection, computerSelection) {
     
 }
+
+let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
