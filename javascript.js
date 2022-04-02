@@ -29,7 +29,12 @@ function checkInput () {
 }
 
 function playRound (playerSelection, computerSelection) {
-    
+    playerSelection = checkInput()
+    computerSelection = computerPlay()
+
+    if (playerSelection === computerPlay) {
+        return `You tie!. ${playerSelection} and ${computerSelection} are equal.`
+    }
 }
 
 let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
