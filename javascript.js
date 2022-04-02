@@ -10,3 +10,7 @@ function computerPlay() {
         return 'Scissor'
     }
 }
+
+function playRound (playerSelection, computerSelection) {
+    
+}
