@@ -90,8 +90,8 @@ function checkInputYesNo () {
         return 'No'
     }
     else {
-        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
-        checkInput ();
+        playAgain = prompt('Please Check your answer, yes or no?');
+        checkInputYesNo ();
     }
 }
 
