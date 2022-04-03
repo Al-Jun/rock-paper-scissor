@@ -106,7 +106,7 @@ function checkInputYesNo () {
 }
 
 function gameFinish () {
-    if (computerScore === 5) {
+    if (computerScore >= 5) {
         playAgain = prompt('Unfortunately, You lose! Wanna try again?');
         if (playAgain === null || checkInputYesNo() === 'No') {
             console.log('Goodbye!');
