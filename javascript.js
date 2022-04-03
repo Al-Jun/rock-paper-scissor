@@ -79,6 +79,7 @@ function gameOn () {
             console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
         }
     }
+    console.log('Game Over!')
     gameFinish();
 }
 
