@@ -128,6 +128,7 @@ function gameFinish () {
             gameOn();
         }
     }
+    else {console.log('You Tie! Goodbye!')}
 }
 
 let userInput;
