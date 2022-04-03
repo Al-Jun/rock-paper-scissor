@@ -128,7 +128,17 @@ function gameFinish () {
             gameOn();
         }
     }
-    else {console.log('You Tie! Goodbye!')}
+    else if ( playerScore == computerScore){
+        playAgain = prompt('You Tie! Wanna play again?');
+        if (playAgain === null || checkInputYesNo === 'No') {
+            console.log('Goodbye!');
+        }
+        else if (checkInputYesNo() === 'Yes'|| playAgain === "") {
+            computerScore = 0;
+            playerScore = 0;
+            gameOn();
+        }
+    }
 }
 
 let userInput;
