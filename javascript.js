@@ -102,10 +102,10 @@ function checkInputYesNo () {
 function gameFinish () {
     if (computerScore === 5) {
         playAgain = prompt('Unfortunately, You lose! Wanna try again?');
-        if (playAgain === null || checkInputYesNo() === 'No' || playAgain === "") {
+        if (playAgain === null || checkInputYesNo() === 'No') {
             console.log('Goodbye!');
         }
-        else if (checkInputYesNo() === 'Yes') {
+        else if (checkInputYesNo() === 'Yes' || playAgain === "") {
             computerScore = 0;
             playerScore = 0;
             gameOn();
@@ -113,10 +113,10 @@ function gameFinish () {
     }
     else {
         playAgain = prompt('Congratulation, You Win! Wanna play again?');
-        if (playAgain === null || checkInputYesNo === 'No' || playAgain === "") {
+        if (playAgain === null || checkInputYesNo === 'No') {
             console.log('Goodbye!');
         }
-        else if (checkInputYesNo() === 'Yes') {
+        else if (checkInputYesNo() === 'Yes'|| playAgain === "") {
             computerScore = 0;
             playerScore = 0;
             gameOn();
