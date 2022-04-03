@@ -75,9 +75,12 @@ function gameOn () {
             console.log (`You Win!. ${playerSelection} beats ${computerSelection}.`);
             console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
         }
-        else 
+        else {
+            console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
+        }
 
     }
+    
 }
 
 let userInput;
