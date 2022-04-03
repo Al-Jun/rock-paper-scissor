@@ -60,7 +60,7 @@ function playRound () {
 
 function gameOn () {
     while (computerScore < 5 && playerScore < 5) {
-        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ', 'rock');
         if (userInput == false) return;
         computerPlay()
         checkInput();
