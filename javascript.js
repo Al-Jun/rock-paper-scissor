@@ -80,7 +80,9 @@ function gameOn () {
         }
 
     }
-    
+    if (computerScore === 5) {
+        let tryAgain = prompt ('Unfortunately you lose, try again?')
+    }
 }
 
 let userInput;
