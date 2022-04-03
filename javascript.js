@@ -84,18 +84,18 @@ function gameOn () {
 }
 
 function checkInputYesNo () {
-    if (convertInput(playAgain) === 'yes') {
+    if (playAgain == false) {
+        return;
+    }
+    else if (playAgain == true) {
+        playAgain = prompt('Please Check your answer, yes or no?');
+        checkInputYesNo ();
+    }
+    else if (convertInput(playAgain) === 'yes') {
         return 'Yes'
     }
     else if (convertInput(playAgain) === 'no') {
         return 'No'
-    }
-    else if (playAgain == false) {
-        return;
-    }
-    else {
-        playAgain = prompt('Please Check your answer, yes or no?');
-        checkInputYesNo ();
     }
 }
 
