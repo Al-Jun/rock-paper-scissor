@@ -97,6 +97,8 @@ function gameFinish () {
     if (computerScore === 5) {
         playAgain = prompt('Unfortunately, You lose! Wanna try again?');
         if (checkInputYesNo() === 'Yes') {
+            computerScore = 0;
+            playerScore = 0;
             gameOn();
         }
         else if (checkInputYesNo() === 'No') {
