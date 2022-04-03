@@ -57,4 +57,10 @@ function playRound () {
     }
 }
 
+function gameOn () {
+    for (let i = 0, i < 5, i++) {
+        let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+    }
+}
+
 let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
