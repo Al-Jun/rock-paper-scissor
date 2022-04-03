@@ -66,8 +66,16 @@ function gameOn () {
         checkInput();
         playRound();
         if (playRound () === `You Lose!. ${computerSelection} beats ${playerSelection}.`) {
-            let computerScore 
+            ++computerScore;
+            console.log (`You Lose!. ${computerSelection} beats ${playerSelection}.`);
+            console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
         }
+        else if (playRound () === `You Win!. ${playerSelection} beats ${computerSelection}.`) {
+            ++playerScore;
+            console.log (`You Win!. ${playerSelection} beats ${computerSelection}.`);
+            console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
+        }
+        else 
 
     }
 }
