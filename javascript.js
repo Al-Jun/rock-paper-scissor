@@ -59,7 +59,7 @@ function playRound () {
 }
 
 function gameOn () {
-    for (let i = 0; i < 5; i++) {
+    if (computerScore < 5 && playerScore < 5) {
         userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
         checkInput();
         playRound();
@@ -76,8 +76,8 @@ function gameOn () {
         else {
             console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
         }
-
     }
+    else gameFinish();
 }
 
 function checkInputYesNo () {
