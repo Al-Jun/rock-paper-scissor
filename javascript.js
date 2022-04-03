@@ -26,7 +26,11 @@ function checkInput () {
         return 'Scissor'
     }
     else {
-        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+        if (userInput === null) {
+            return;
+        }
+        
+        else userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
         checkInput ();
     }
 }
@@ -34,7 +38,6 @@ function checkInput () {
 function playRound () {
     playerSelection = checkInput()
     computerSelection = computerPlay()
-
     if (playerSelection === computerPlay) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
