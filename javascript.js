@@ -109,7 +109,7 @@ function gameFinish () {
             computerScore = 0;
             playerScore = 0;
             gameOn();
-
+        }
     }
     else {
         playAgain = prompt('Congratulation, You Win! Wanna play again?');
@@ -120,6 +120,7 @@ function gameFinish () {
             computerScore = 0;
             playerScore = 0;
             gameOn();
+        }
     }
 }
 
@@ -130,4 +131,4 @@ let computerScore = 0;
 let playerScore = 0;
 let playAgain;
 
-gameOn()
+gameOn();
