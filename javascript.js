@@ -111,6 +111,8 @@ function gameFinish () {
 }
 
 let userInput;
+let playerSelection;
+let computerSelection;
 let computerScore = 0;
 let playerScore = 0;
 let playAgain;
