@@ -38,7 +38,10 @@ function checkInput () {
 function playRound () {
     playerSelection = checkInput()
     computerSelection = computerPlay()
-    if (playerSelection === computerPlay) {
+    if (playerSelection === undefined) {
+        return;
+    }
+    else if (playerSelection === computerPlay) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
     else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
