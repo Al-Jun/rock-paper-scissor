@@ -61,6 +61,7 @@ function playRound () {
 function gameOn () {
     while (computerScore < 5 && playerScore < 5) {
         userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+        computerPlay()
         checkInput();
         playRound();
         if (playRound () === `You Lose!. ${computerSelection} beats ${playerSelection}.`) {
