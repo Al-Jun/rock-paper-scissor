@@ -90,6 +90,9 @@ function checkInputYesNo () {
     else if (convertInput(playAgain) === 'no') {
         return 'No'
     }
+    else if (playAgain == false) {
+        return;
+    }
     else {
         playAgain = prompt('Please Check your answer, yes or no?');
         checkInputYesNo ();
