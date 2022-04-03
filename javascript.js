@@ -100,4 +100,4 @@ function gameFinish () {
 }
 
 let userInput;
-
+let playAgain;
