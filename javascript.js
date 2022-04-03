@@ -27,7 +27,7 @@ function checkInput () {
     }
     else {
         userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
-        checkInput (userInput);
+        checkInput ();
     }
 }
 
