@@ -81,10 +81,10 @@ function gameOn () {
 }
 
 function checkInputYesNo () {
-    if (convertInput() === 'yes') {
+    if (convertInput(playAgain) === 'yes') {
         return 'Yes'
     }
-    else if (convertInput() === 'no') {
+    else if (convertInput(playAgain) === 'no') {
         return 'No'
     }
     else {
