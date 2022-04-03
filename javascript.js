@@ -87,22 +87,22 @@ function checkInputYesNo () {
     if (playAgain == false) {
         return;
     }
-    else if (playAgain == true) {
-        playAgain = prompt('Please Check your answer, yes or no?');
-        checkInputYesNo ();
-    }
     else if (convertInput(playAgain) === 'yes') {
         return 'Yes'
     }
     else if (convertInput(playAgain) === 'no') {
         return 'No'
     }
+    else if (playAgain == true) {
+        playAgain = prompt('Please Check your answer, yes or no?');
+        checkInputYesNo ();
+    }
 }
 
 function gameFinish () {
     if (computerScore === 5) {
         playAgain = prompt('Unfortunately, You lose! Wanna try again?');
-        if (checkInputYesNo() == false || checkInputYesNo === 'No') {
+        if (playAgain == false || checkInputYesNo() === 'No') {
             console.log('Goodbye!')
         }
         else if (checkInputYesNo() === 'Yes') {
