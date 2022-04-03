@@ -101,7 +101,7 @@ function gameFinish () {
         if (checkInputYesNo() === 'Yes') {
             gameOn();
         }
-        else {
+        else if (checkInputYesNo() === 'No') {
             console.log('Goodbye!');
         }
 
