@@ -1,5 +1,5 @@
 function computerPlay() {
-    const rps = Math.floor(Math.random()*10)
+    const rps = Math.floor(Math.random()*10-1)
     if (rps >= 0 && rps <= 2) {
         return 'Rock'
     }
