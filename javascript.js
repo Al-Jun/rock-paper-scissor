@@ -41,7 +41,7 @@ function playRound () {
     if (playerSelection === undefined) {
         return;
     }
-    else if (playerSelection === computerPlay) {
+    else if (playerSelection === computerSelection) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
     else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
