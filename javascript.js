@@ -109,6 +109,18 @@ function gameFinish () {
         }
 
     }
+    else {
+        playAgain = prompt('Congratulation, You Win! Wanna play again?');
+        if (checkInputYesNo() === 'Yes') {
+            computerScore = 0;
+            playerScore = 0;
+            gameOn();
+        }
+        else {
+            console.log('Goodbye!');
+        }
+
+    }
 }
 
 let userInput;
