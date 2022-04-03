@@ -12,10 +12,7 @@ function computerPlay() {
 }
 
 function convertInput (input) {
-    if (input == true) {
     return input.toLowerCase()
-    }
-    else return;
 }
 
 function checkInput () {
