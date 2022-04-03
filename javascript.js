@@ -58,8 +58,16 @@ function playRound () {
 }
 
 function gameOn () {
-    for (let i = 0, i < 5, i++) {
-        let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+    for (let i = 0; i < 5; i++) {
+        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+        let computerScore = 0;
+        let playerScore = 0;
+        checkInput();
+        playRound();
+        if (playRound () === `You Lose!. ${computerSelection} beats ${playerSelection}.`) {
+            let computerScore 
+        }
+
     }
 }
 
