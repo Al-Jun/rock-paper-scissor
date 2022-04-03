@@ -82,5 +82,9 @@ function gameOn () {
     }
 }
 
+function gameFinish () {
+    
+}
+
 let userInput;
 
