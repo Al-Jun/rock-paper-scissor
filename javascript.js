@@ -63,4 +63,4 @@ function gameOn () {
     }
 }
 
-let userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ')
+let userInput;
