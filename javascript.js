@@ -82,8 +82,21 @@ function gameOn () {
     }
 }
 
+function checkInputYesNo () {
+    if (convertInput() === 'yes') {
+        return 'Yes'
+    }
+    else if (convertInput() === 'no') {
+        return 'No'
+    }
+    else {
+        userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
+        checkInput ();
+    }
+}
+
 function gameFinish () {
-    
+
 }
 
 let userInput;
