@@ -11,37 +11,9 @@ function computerPlay() {
     }
 }
 
-function convertInput (input) {
-    return input.toLowerCase()
-}
-
-function checkInput () {
-    if (convertInput(userInput) === 'rock') {
-        return 'Rock'
-    }
-    else if (convertInput(userInput) === 'paper') {
-        return 'Paper'
-    }
-    else if (convertInput(userInput) === 'scissor') {
-        return 'Scissor'
-    }
-    else {
-        if (userInput === null) {
-            return;
-        }
-        
-        else userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ');
-        checkInput ();
-    }
-}
-
 function playRound () {
-    playerSelection = checkInput()
     computerSelection = computerPlay()
-    if (playerSelection === undefined) {
-        return;
-    }
-    else if (playerSelection === computerSelection) {
+    if (playerSelection === computerSelection) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
     else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
