@@ -48,3 +48,7 @@ h1 {
 .player-hp,.enemy-hp {
     flex: 1;
 }
+
+.enemy-hp {
+    direction: rtl;
+}
