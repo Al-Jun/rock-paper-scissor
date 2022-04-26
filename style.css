@@ -13,4 +13,5 @@ body,html,h1,.inside-container {
   body {
     background-color: rgba(255, 255, 255, 0.144);
     background-size: cover;
+    min-width: 100vh;
 }
