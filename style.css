@@ -28,4 +28,5 @@ h1 {
     min-width: 50vh;
     font-size: large;
     align-items: center;
+    justify-content: center;
 }
