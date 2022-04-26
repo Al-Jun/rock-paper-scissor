@@ -28,7 +28,6 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.377);
-    min-width: 50vh;
     margin: 20vh 0;
     font-size: large;
     color: white;
