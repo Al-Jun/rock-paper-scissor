@@ -54,7 +54,7 @@ h1 {
 }
 
 .option {
-    min-width: inherit;
+    min-width: 600px;
     display: flex;
     justify-content: space-around;
 }
