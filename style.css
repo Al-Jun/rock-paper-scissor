@@ -3,3 +3,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+body,html,h1,.inside-container {
+    margin: 0;
+  }
