@@ -40,7 +40,7 @@ h1 {
 }
 
 .health-point {
-    min-width: inherit;
+    min-width: 600px;
     display: flex;
     flex-direction: row;
 }
