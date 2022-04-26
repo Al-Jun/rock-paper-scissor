@@ -32,4 +32,9 @@ h1 {
     margin: 20vh 0;
     font-size: large;
     color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
