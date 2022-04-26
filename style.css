@@ -24,6 +24,7 @@ h1 {
 
 .inside-container {
     display: flex;
+    flex-direction: column;
     min-width: 50vh;
     font-size: large;
 }
