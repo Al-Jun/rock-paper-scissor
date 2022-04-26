@@ -4,7 +4,7 @@ html {
     background-repeat: no-repeat;
 }
 
-body,html,h1,.inside-container {
+body,html,h1 {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -40,7 +40,7 @@ h1 {
 
 .health-point {
     display: flex;
-    flex-direction: row;                     
+    flex-direction: row;
 }
 
 .player-hp,.enemy-hp {
