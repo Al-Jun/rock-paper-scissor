@@ -54,5 +54,6 @@ h1 {
 }
 
 .option {
+    min-width: inherit;
     display: flex;
 }
