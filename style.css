@@ -23,6 +23,7 @@ h1 {
 }
 
 .inside-container {
+    display: flex;
     min-width: 50vh;
     font-size: large;
 }
