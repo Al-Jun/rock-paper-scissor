@@ -58,3 +58,7 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+
+.rock,.paper,.scissor {
+    padding: .5rem;
+}
