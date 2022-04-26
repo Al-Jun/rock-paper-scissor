@@ -25,10 +25,10 @@ h1 {
 .inside-container {
     display: flex;
     flex-direction: column;
-    min-width: 50vh;
-    margin: 20vh 0;
-    font-size: large;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.377);
+    min-width: 50vh;
+    margin: 20vh 0;
+    font-size: large;
 }
