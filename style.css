@@ -1,4 +1,5 @@
 html {
     background: url('./background.jpg') top center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
