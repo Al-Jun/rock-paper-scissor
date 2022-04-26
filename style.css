@@ -52,3 +52,7 @@ h1 {
 .enemy-hp {
     direction: rtl;
 }
+
+.option {
+    display: flex;
+}
