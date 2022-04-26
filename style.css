@@ -23,6 +23,7 @@ h1 {
 }
 
 .inside-container {
+    min-width: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
