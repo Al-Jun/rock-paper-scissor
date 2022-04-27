@@ -12,6 +12,7 @@ function computerPlay() {
 }
 
 function playRound () {
+    computerPlay();
     if (playerSelection === computerSelection) {
         playerMove = 0;
         enemyMove = 0;
