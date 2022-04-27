@@ -71,6 +71,7 @@ let playerSelection;
 let computerSelection;
 let playerMove;
 let enemyMove;
+let playerScore = 0;
 
 choice.forEach(item => {
     item.addEventListener('click', e => {
