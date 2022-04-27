@@ -65,6 +65,7 @@ function gameOn () {
     }
 }
 
+const option = document.querySelectorAll('.move');
 const attack = document.querySelector('.attack');
 const counter = document.querySelector('.counter');
 const magic = document.querySelector('.magic');
