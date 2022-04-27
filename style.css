@@ -66,3 +66,7 @@ h1 {
     box-shadow: 0 0 1rem orangered;
     transition: all .07s ease;
 }
+
+.playing {
+    transform: scale(1.1);
+}
