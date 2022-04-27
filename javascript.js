@@ -12,26 +12,27 @@ function computerPlay() {
 }
 
 function playRound () {
-    computerSelection = computerPlay()
+    const playerSelection = playerChoice();
+    const computerSelection = computerPlay()
     if (playerSelection === computerSelection) {
         return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
-    else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
+    else if (playerSelection === 'ATTACK' && computerSelection === 'COUNTER') {
         return `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
-    else if (playerSelection === 'Rock' && computerSelection === 'Scissor') {
+    else if (playerSelection === 'ATTACK' && computerSelection === 'MAGIC') {
         return `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
-    else if (playerSelection === 'Scissor' && computerSelection === 'Rock') {
+    else if (playerSelection === 'MAGIC' && computerSelection === 'ATTACK') {
         return `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
-    else if (playerSelection === 'Scissor' && computerSelection === 'Paper') {
+    else if (playerSelection === 'MAGIC' && computerSelection === 'COUNTER') {
         return `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
-    else if (playerSelection === 'Paper' && computerSelection === 'Scissor') {
+    else if (playerSelection === 'COUNTER' && computerSelection === 'MAGIC') {
         return `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
-    else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
+    else if (playerSelection === 'COUNTER' && computerSelection === 'ATTACK') {
         return `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
 }
