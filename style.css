@@ -59,7 +59,7 @@ h1 {
     justify-content: space-around;
 }
 
-.rock,.paper,.scissor {
+.attack,.counter,.magic {
     padding: .5rem;
     border: 1px solid silver;
     border-radius: .5rem;
