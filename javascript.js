@@ -73,3 +73,5 @@ let playerSelection;
 let computerSelection;
 let playerMove;
 let enemyMove;
+
+attack.addEventListener('click', (e) => console.log(e.target));
