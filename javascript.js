@@ -72,4 +72,9 @@ let computerSelection;
 let playerMove;
 let enemyMove;
 
-attack.addEventListener('click', (e) => console.log(e.target));
+choice.forEach(item => {
+    item.addEventListener('click', e => {
+        playerSelection = e.target.innerText;
+    })
+})
+
