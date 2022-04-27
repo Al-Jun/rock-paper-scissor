@@ -15,25 +15,25 @@ function playRound () {
     const playerSelection = playerChoice();
     const computerSelection = computerPlay()
     if (playerSelection === computerSelection) {
-        return `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
+        playResult = `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
     else if (playerSelection === 'ATTACK' && computerSelection === 'COUNTER') {
-        return `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
     else if (playerSelection === 'ATTACK' && computerSelection === 'MAGIC') {
-        return `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
     else if (playerSelection === 'MAGIC' && computerSelection === 'ATTACK') {
-        return `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
     else if (playerSelection === 'MAGIC' && computerSelection === 'COUNTER') {
-        return `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
     else if (playerSelection === 'COUNTER' && computerSelection === 'MAGIC') {
-        return `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
     }
     else if (playerSelection === 'COUNTER' && computerSelection === 'ATTACK') {
-        return `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
     }
 }
 
