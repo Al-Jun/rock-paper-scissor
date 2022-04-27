@@ -66,7 +66,7 @@ function gameOn () {
     }
 }
 
-const option = document.querySelectorAll('.move');
+const choice = document.querySelectorAll('.move');
 let playerSelection;
 let computerSelection;
 let playerMove;
