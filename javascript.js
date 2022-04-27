@@ -44,14 +44,14 @@ function playRound () {
 }
 
 function gameOn () {
-    while (computerScore < 5 && playerScore < 5) {
+    while (enemyScore < 5 && playerScore < 5) {
         userInput = prompt('Please Choose your move: Rock, Paper, or Scissor? ', 'rock');
         if (userInput === null) {
-            computerScore += 5;
+            enemyScore += 5;
             playerScore += 5;
         }
         else if (playRound () === `You Lose!. ${computerSelection} beats ${playerSelection}.`) {
-            ++computerScore;
+            ++enemyScore;
             console.log (`You Lose!. ${computerSelection} beats ${playerSelection}.`);
             console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
         }
