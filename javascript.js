@@ -66,10 +66,6 @@ function gameOn () {
 }
 
 const option = document.querySelectorAll('.move');
-const attack = document.querySelector('.attack');
-const counter = document.querySelector('.counter');
-const magic = document.querySelector('.magic');
-const giveUp = document.querySelector('.give-up');
 let playerSelection;
 let computerSelection;
 let playerMove;
