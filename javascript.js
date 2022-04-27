@@ -12,8 +12,6 @@ function computerPlay() {
 }
 
 function playRound () {
-    const playerSelection = playerChoice();
-    const computerSelection = computerPlay()
     if (playerSelection === computerSelection) {
         playResult = `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
     }
