@@ -13,25 +13,32 @@ function computerPlay() {
 
 function playRound () {
     if (playerSelection === computerSelection) {
-        playResult = `You Tie!. ${playerSelection} and ${computerSelection} are equal.`
+        playerMove = 0;
+        enemyMove = 0;
     }
     else if (playerSelection === 'ATTACK' && computerSelection === 'COUNTER') {
-        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playerMove = 1;
+        enemyMove = 2;
     }
     else if (playerSelection === 'ATTACK' && computerSelection === 'MAGIC') {
-        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playerMove = 1;
+        enemyMove = 3;
     }
     else if (playerSelection === 'MAGIC' && computerSelection === 'ATTACK') {
-        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playerMove = 3;
+        enemyMove = 1;
     }
     else if (playerSelection === 'MAGIC' && computerSelection === 'COUNTER') {
-        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playerMove = 3;
+        enemyMove = 2;
     }
     else if (playerSelection === 'COUNTER' && computerSelection === 'MAGIC') {
-        playResult = `You Lose!. ${computerSelection} beats ${playerSelection}.`
+        playerMove = 2;
+        enemyMove = 3;
     }
     else if (playerSelection === 'COUNTER' && computerSelection === 'ATTACK') {
-        playResult = `You Win!. ${playerSelection} beats ${computerSelection}.`
+        playerMove = 2;
+        enemyMove = 1;
     }
 }
 
