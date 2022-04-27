@@ -60,6 +60,6 @@ function gameOn () {
     }
 }
 
-const rock = document.querySelector('.rock');
-const paper = document.querySelector('.paper');
-const scissor = document.querySelector('.scissor');
+const attack = document.querySelector('.attack');
+const counter = document.querySelector('.counter');
+const magic = document.querySelector('.magic');
