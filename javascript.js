@@ -64,5 +64,6 @@ const attack = document.querySelector('.attack');
 const counter = document.querySelector('.counter');
 const magic = document.querySelector('.magic');
 let playerSelection;
+let computerSelection;
 let playerMove;
 let enemyMove;
