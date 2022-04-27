@@ -17,27 +17,27 @@ function playRound () {
         playerMove = 0;
         enemyMove = 0;
     }
-    else if (playerSelection === 'ATTACK' && computerSelection === 'COUNTER') {
+    else if (playerSelection === 'ATTACK!' && computerSelection === 'COUNTER!') {
         playerMove = 1;
         enemyMove = 2;
     }
-    else if (playerSelection === 'ATTACK' && computerSelection === 'MAGIC') {
+    else if (playerSelection === 'ATTACK!' && computerSelection === 'MAGIC!') {
         playerMove = 1;
         enemyMove = 3;
     }
-    else if (playerSelection === 'MAGIC' && computerSelection === 'ATTACK') {
+    else if (playerSelection === 'MAGIC!' && computerSelection === 'ATTACK!') {
         playerMove = 3;
         enemyMove = 1;
     }
-    else if (playerSelection === 'MAGIC' && computerSelection === 'COUNTER') {
+    else if (playerSelection === 'MAGIC!' && computerSelection === 'COUNTER!') {
         playerMove = 3;
         enemyMove = 2;
     }
-    else if (playerSelection === 'COUNTER' && computerSelection === 'MAGIC') {
+    else if (playerSelection === 'COUNTER!' && computerSelection === 'MAGIC!') {
         playerMove = 2;
         enemyMove = 3;
     }
-    else if (playerSelection === 'COUNTER' && computerSelection === 'ATTACK') {
+    else if (playerSelection === 'COUNTER!' && computerSelection === 'ATTACK!') {
         playerMove = 2;
         enemyMove = 1;
     }
