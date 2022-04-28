@@ -40,8 +40,8 @@ function gameOn () {
     while (enemyHP >= 1 && playerHP >= 1) {
         alert('Please Choose your move!');
         if (chooseDeath) {
-            enemyHP -= 5;
-            playerHP -= 5;
+            enemyHP = 0;
+            playerHP = 0;
         }
         else if (playRound () === "LOSE") {
             --playerHP;
