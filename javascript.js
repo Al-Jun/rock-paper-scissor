@@ -44,14 +44,12 @@ function gameOn () {
             playerHP -= 5;
         }
         else if (playRound () === "LOSE") {
-            --enemyHP;
+            --playerHP;
             console.log (`You Lose!. ${computerSelection} beats ${playerSelection}.`);
-            console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
         }
         else if (playRound () === "WIN") {
-            --playerHP;
+            --enemyHP;
             console.log (`You Win!. ${playerSelection} beats ${computerSelection}.`);
-            console.log (`Your Score: ${playerScore}  Enemy Score: ${computerScore}`);
         }
         else {
             console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
