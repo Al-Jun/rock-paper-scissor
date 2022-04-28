@@ -73,3 +73,6 @@ choice.forEach(item => {
     })
 })
 
+giveUp.addEventListener('click', () => {
+    chooseDeath = true;
+})
