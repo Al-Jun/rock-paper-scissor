@@ -39,7 +39,7 @@ function playRound () {
 function gameOn () {
     while (enemyScore >= 1 && playerScore >= 1) {
         alert('Please Choose your move!');
-        if (giveUp) {
+        if (chooseDeath) {
             enemyHP -= 5;
             playerHP -= 5;
         }
