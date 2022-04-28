@@ -69,8 +69,6 @@ function gameOn () {
 const choice = document.querySelectorAll('.move');
 let playerSelection;
 let computerSelection;
-let playerMove;
-let enemyMove;
 let playerScore = 0;
 let enemyScore = 0;
 
