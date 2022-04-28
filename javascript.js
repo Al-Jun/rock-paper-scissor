@@ -14,32 +14,25 @@ function computerPlay() {
 function playRound () {
     computerPlay();
     if (playerSelection === computerSelection) {
-        playerMove = 0;
-        enemyMove = 0;
+        return "TIE"
     }
     else if (playerSelection === 'ATTACK!' && computerSelection === 'COUNTER!') {
-        playerMove = 1;
-        enemyMove = 2;
+        return "LOSE"
     }
     else if (playerSelection === 'ATTACK!' && computerSelection === 'MAGIC!') {
-        playerMove = 1;
-        enemyMove = 3;
+        return "WIN"
     }
     else if (playerSelection === 'MAGIC!' && computerSelection === 'ATTACK!') {
-        playerMove = 3;
-        enemyMove = 1;
+        return "LOSE"
     }
     else if (playerSelection === 'MAGIC!' && computerSelection === 'COUNTER!') {
-        playerMove = 3;
-        enemyMove = 2;
+        return "WIN"
     }
     else if (playerSelection === 'COUNTER!' && computerSelection === 'MAGIC!') {
-        playerMove = 2;
-        enemyMove = 3;
+        return "LOSE"
     }
     else if (playerSelection === 'COUNTER!' && computerSelection === 'ATTACK!') {
-        playerMove = 2;
-        enemyMove = 1;
+        return "WIN"
     }
 }
 
