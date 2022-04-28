@@ -69,8 +69,8 @@ function gameOn () {
 const choice = document.querySelectorAll('.move');
 let playerSelection;
 let computerSelection;
-let playerScore = 0;
-let enemyScore = 0;
+let playerHP = 5;
+let enemyHP = 5;
 
 choice.forEach(item => {
     item.addEventListener('click', e => {
