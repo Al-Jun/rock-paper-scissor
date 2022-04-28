@@ -60,6 +60,7 @@ function gameOn () {
 }
 
 const choice = document.querySelectorAll('.move');
+const giveUp = document.querySelector('.give-up');
 let playerSelection;
 let computerSelection;
 let playerHP = 5;
