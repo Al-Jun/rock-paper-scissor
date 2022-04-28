@@ -65,6 +65,7 @@ let playerSelection;
 let computerSelection;
 let playerHP = 5;
 let enemyHP = 5;
+let chooseDeath;
 
 choice.forEach(item => {
     item.addEventListener('click', e => {
