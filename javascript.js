@@ -59,6 +59,8 @@ function gameOn () {
 
 const choice = document.querySelectorAll('.move');
 const giveUp = document.querySelector('.give-up');
+const playerHPMessage = document.querySelector('.player-hp');
+const enemyHPMessage = document.querySelector('.enemy-hp');
 let playerSelection;
 let computerSelection;
 let playerHP = 5;
