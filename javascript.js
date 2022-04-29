@@ -36,6 +36,11 @@ function playRound () {
     }
 }
 
+function displayScore () {
+    playerHPMessage.textContent = `Your HP: ${playerHP}`;
+    enemyHPMessage.textContent = `Enemy HP: ${enemyHP}`;
+}
+
 function gameOn () {
     while (enemyHP >= 1 && playerHP >= 1) {
         alert('Please Choose your move!');
