@@ -92,3 +92,5 @@ giveUp.addEventListener('click', () => {
     enemyHP = 0;
     gameOn();
 })
+
+displayScore();
