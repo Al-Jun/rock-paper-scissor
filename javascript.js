@@ -51,7 +51,7 @@ function checkScore () {
 
 function gameOn () {
     if (chooseDeath) {
-        alert("game Over!")
+        console.log(`Game Over!\n\n${checkScore()}`)
     }
     else {
         if (playRound () === "LOSE") {
