@@ -41,6 +41,11 @@ function displayScore () {
     enemyHPMessage.textContent = `Enemy HP: ${enemyHP}`;
 }
 
+function checkScore () {
+    if ((enemyHP === 0 || playerHP === 0) && enemyHP > playerHP) alert('You Lose!');
+    else if ((enemyHP === 0 || playerHP === 0) && enemyHP < playerHP) alert ('You Win!')
+}
+
 function gameOn () {
     while (enemyHP >= 1 && playerHP >= 1) {
         alert('Please Choose your move!');
