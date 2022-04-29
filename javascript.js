@@ -82,6 +82,7 @@ let chooseDeath;
 choice.forEach(item => {
     item.addEventListener('click', e => {
         playerSelection = e.target.innerText;
+        gameOn();
     })
 })
 
