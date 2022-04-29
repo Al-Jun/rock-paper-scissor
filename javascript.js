@@ -91,8 +91,6 @@ choice.forEach(item => {
 
 giveUp.addEventListener('click', () => {
     chooseDeath = true;
-    playerHP = 0;
-    enemyHP = 0;
     gameOn();
 })
 
