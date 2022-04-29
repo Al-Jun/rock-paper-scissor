@@ -47,19 +47,21 @@ function checkScore () {
 }
 
 function gameOn () {
-    while (enemyHP >= 1 && playerHP >= 1) {
-        alert('Please Choose your move!');
-        if (chooseDeath) {
-            enemyHP = 0;
-            playerHP = 0;
-        }
-        else if (playRound () === "LOSE") {
+    if (chooseDeath) {
+        alert("game Over!")
+    }
+    else {
+        if (playRound () === "LOSE") {
             --playerHP;
             console.log (`You Lose!. ${computerSelection} beats ${playerSelection}.`);
+            displayScore();
+            checkScore();
         }
         else if (playRound () === "WIN") {
             --enemyHP;
             console.log (`You Win!. ${playerSelection} beats ${computerSelection}.`);
+            displayScore();
+            checkScore();
         }
         else {
             console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
