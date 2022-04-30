@@ -68,6 +68,11 @@ h1 {
     transition: all .07s ease;
 }
 
+.attack:hover,.counter:hover,.magic:hover {
+    border: 1px solid #090909;
+}
+
+
 .playing {
     transform: scale(1.1);
     border-color: #ffc600;
