@@ -72,6 +72,11 @@ h1 {
     border: 1px solid #090909;
     background-color: silver;
     box-shadow: 0 0 1rem azure;
+    text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
 }
 
 
