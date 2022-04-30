@@ -91,3 +91,7 @@ h1 {
     border-radius: .5rem;
     background-color: rgba(255, 0, 0, 0.527);
 }
+
+.give-up:hover {
+    transform: scale(1.3);
+}
