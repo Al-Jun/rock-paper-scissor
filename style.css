@@ -65,7 +65,7 @@ h1 {
     background-color: #090909;
     border-radius: .5rem;
     box-shadow: 0 0 1rem orangered;
-    transition: all .07s ease;
+    transition: all .1s ease;
 }
 
 .attack:hover,.counter:hover,.magic:hover {
