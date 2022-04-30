@@ -70,6 +70,7 @@ h1 {
 
 .attack:hover,.counter:hover,.magic:hover {
     border: 1px solid #090909;
+    background-color: silver;
 }
 
 
