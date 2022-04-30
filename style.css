@@ -62,6 +62,7 @@ h1 {
 .attack,.counter,.magic {
     padding: .5rem;
     border: 1px solid silver;
+    background-color: #090909;
     border-radius: .5rem;
     box-shadow: 0 0 1rem orangered;
     transition: all .07s ease;
