@@ -85,7 +85,11 @@ let chooseDeath;
 choice.forEach(item => {
     item.addEventListener('click', e => {
         playerSelection = e.target.innerText;
+        item.classList.add('playing');
         gameOn();
+    })
+    item.addEventListener('transitionend', () => {
+        item.classList.remove('playing');
     })
 })
 
