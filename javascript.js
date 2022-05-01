@@ -72,6 +72,10 @@ function gameOn () {
     }
 }
 
+function gameOver() {
+    chooseDeath = true;
+}
+
 const choice = document.querySelectorAll('.move');
 const giveUp = document.querySelector('.give-up');
 const playerHPMessage = document.querySelector('.player-hp');
