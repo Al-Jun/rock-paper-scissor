@@ -42,8 +42,8 @@ function displayScore () {
 }
 
 function checkScore () {
-    if ((enemyHP === 0 || playerHP === 0) && enemyHP > playerHP) alert('You Lose!');
-    else if ((enemyHP === 0 || playerHP === 0) && enemyHP < playerHP) alert ('You Win!')
+    if ((enemyHP === 0 || playerHP === 0) && enemyHP > playerHP) gameOver();
+    else if ((enemyHP === 0 || playerHP === 0) && enemyHP < playerHP) gameOver();
     else if (enemyHP > playerHP) return 'You Lose!';
     else if (enemyHP < playerHP) return 'You Win!';
     else return 'You Tie!'
