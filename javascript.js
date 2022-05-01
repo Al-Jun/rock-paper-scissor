@@ -80,6 +80,8 @@ const choice = document.querySelectorAll('.move');
 const giveUp = document.querySelector('.give-up');
 const playerHPMessage = document.querySelector('.player-hp');
 const enemyHPMessage = document.querySelector('.enemy-hp');
+const insideCon = document.querySelector('.inside-container');
+
 let playerSelection;
 let computerSelection;
 let playerHP = 5;
