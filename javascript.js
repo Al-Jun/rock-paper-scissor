@@ -100,8 +100,10 @@ choice.forEach(item => {
 })
 
 giveUp.addEventListener('click', () => {
-    chooseDeath = true;
+    gameOver();  
     gameOn();
+    insideCon.addEventListener('transitionend', () => insideCon.remove());
+    insideCon.classList.add('delete');
 })
 
 displayScore();
