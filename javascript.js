@@ -73,23 +73,34 @@ function checkScore () {
 
 function gameOn () {
     if (chooseDeath) {
-        console.log(`Game Over!\n\n${checkScore()}`)
+        insideCon.classList.add('delete');
+        output.classList.add('output-play');
+        p.style.fontWeight = 'bolder';
+        p.style.fontSize = '24px';
+        p.textContent = `Game Over!\r\n\r\n${endResult}`;
+        output.appendChild(p);
     }
     else {
         if (playRound () === "LOSE") {
             --playerHP;
-            console.log (`You Lose!. ${computerSelection} beats ${playerSelection}.`);
+            p.textContent = `You Lose!.\r\n\r\n${computerSelection} beats ${playerSelection}.`;
+            output.appendChild(p);
             displayScore();
             checkScore();
         }
         else if (playRound () === "WIN") {
             --enemyHP;
-            console.log (`You Win!. ${playerSelection} beats ${computerSelection}.`);
+            p.textContent = `You Win!.\r\n\r\n${playerSelection} beats ${computerSelection}.`;
+            output.appendChild(p);
             displayScore();
             checkScore();
         }
         else {
-            console.log (`You Tie!. ${playerSelection} and ${computerSelection} are equal.`)
+            tieStyle();
+            p.textContent = `You Tie!.\r\n\r\n${playerSelection} and ${computerSelection} are equal.`;
+            output.appendChild(p);
+            displayScore();
+            checkScore();
         }
     }
 }
