@@ -29,7 +29,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.377);
-    margin: 20vh 0;
+    margin: 20vh 0 5vh;
     font-size: large;
     color: white;
     text-shadow:
