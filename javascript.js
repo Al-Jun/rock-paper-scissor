@@ -83,6 +83,13 @@ function winStyle () {
     p.style.textAlign = 'center';
 }
 
+function loseStyle () {
+    p.style.whiteSpace = 'pre';
+    p.style.color = 'darkgray';
+    p.style.textShadow = '-1px -1px 0 #090909, 1px -1px 0 #090909, -1px 1px 0 #090909, 1px 1px 0 #090909';
+    p.style.textAlign = 'center';
+}
+
 const choice = document.querySelectorAll('.move');
 const giveUp = document.querySelector('.give-up');
 const playerHPMessage = document.querySelector('.player-hp');
