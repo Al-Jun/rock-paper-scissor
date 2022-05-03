@@ -116,3 +116,7 @@ h1 {
 .output p {
     font-size: large;
 }
+
+.output-play {
+    background-color: rgba(0, 0, 0, 0.377);
+}
