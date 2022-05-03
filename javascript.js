@@ -110,6 +110,7 @@ let computerSelection;
 let playerHP = 5;
 let enemyHP = 5;
 let chooseDeath;
+let endResult = 'You Tie!';
 
 choice.forEach(item => {
     item.addEventListener('click', e => {
