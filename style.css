@@ -121,4 +121,5 @@ h1 {
     background-color: rgba(0, 0, 0, 0.377);
     border: silver 3px solid;
     border-radius: .5rem;
+    box-shadow: 0 0 1rem rgba(218, 165, 32, 0.733);
 }
