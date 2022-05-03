@@ -127,7 +127,10 @@ choice.forEach(item => {
 giveUp.addEventListener('click', () => {
     gameOver();  
     gameOn();
-    insideCon.addEventListener('transitionend', () => insideCon.remove());
+    insideCon.addEventListener('transitionend', () => {
+        insideCon.remove();
+        output.style.marginTop = '40vh'; 
+    });
     insideCon.classList.add('delete');
 })
 
