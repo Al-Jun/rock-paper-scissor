@@ -116,6 +116,7 @@ choice.forEach(item => {
     item.addEventListener('click', e => {
         playerSelection = e.target.innerText;
         item.classList.add('playing');
+        output.classList.add('output-play');
         gameOn();
     })
     item.addEventListener('transitionend', () => {
