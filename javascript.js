@@ -7,7 +7,7 @@ function computerPlay() {
         computerSelection = 'COUNTER!';
     }
     else if (rps >= 6 && rps <= 8) {
-        computerSelection = 'MAGIC!';
+        computerSelection = 'CHARGED ATTACK!';
     }
 }
 
@@ -19,16 +19,16 @@ function playRound () {
     else if (playerSelection === 'ATTACK!' && computerSelection === 'COUNTER!') {
         return "LOSE"
     }
-    else if (playerSelection === 'ATTACK!' && computerSelection === 'MAGIC!') {
+    else if (playerSelection === 'ATTACK!' && computerSelection === 'CHARGED ATTACK!') {
         return "WIN"
     }
-    else if (playerSelection === 'MAGIC!' && computerSelection === 'ATTACK!') {
+    else if (playerSelection === 'CHARGED ATTACK!' && computerSelection === 'ATTACK!') {
         return "LOSE"
     }
-    else if (playerSelection === 'MAGIC!' && computerSelection === 'COUNTER!') {
+    else if (playerSelection === 'CHARGED ATTACK!' && computerSelection === 'COUNTER!') {
         return "WIN"
     }
-    else if (playerSelection === 'COUNTER!' && computerSelection === 'MAGIC!') {
+    else if (playerSelection === 'COUNTER!' && computerSelection === 'CHARGED ATTACK!') {
         return "LOSE"
     }
     else if (playerSelection === 'COUNTER!' && computerSelection === 'ATTACK!') {
