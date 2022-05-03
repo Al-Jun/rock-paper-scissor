@@ -103,6 +103,7 @@ const playerHPMessage = document.querySelector('.player-hp');
 const enemyHPMessage = document.querySelector('.enemy-hp');
 const insideCon = document.querySelector('.inside-container');
 const output = document.querySelector('.output');
+const p = document.createElement('p');
 
 let playerSelection;
 let computerSelection;
