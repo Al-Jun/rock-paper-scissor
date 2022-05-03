@@ -119,4 +119,5 @@ h1 {
 
 .output-play {
     background-color: rgba(0, 0, 0, 0.377);
+    border: silver 3px solid;
 }
