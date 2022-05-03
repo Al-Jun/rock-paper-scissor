@@ -59,7 +59,7 @@ h1 {
     justify-content: space-around;
 }
 
-.attack,.counter,.charged-attack {
+.move {
     padding: .5rem;
     border: 1px solid silver;
     background-color: #090909;
