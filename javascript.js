@@ -70,6 +70,13 @@ function gameOn () {
     if (chooseDeath) {
         insideCon.classList.add('delete');
         output.classList.add('output-play');
+        if (endResult === 'You Win!') {
+            output.classList.add('win-style');
+        }
+        else if (endResult === 'You Lose!') {
+            output.classList.add('lose-style');
+        }
+        else output.classList.add('tie-style');
         p.style.fontWeight = 'bolder';
         p.style.fontSize = '24px';
         p.textContent = `Game Over!\r\n\r\n${endResult}`;
@@ -78,21 +85,53 @@ function gameOn () {
     else {
         if (playRound () === "LOSE") {
             --playerHP;
-            p.textContent = `You Lose!.\r\n\r\n${computerSelection} beats ${playerSelection}.`;
+            if ((output.getAttribute('class')) === 'output output-play') {
+                output.classList.add('lose-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play win-style') {
+                output.classList.remove('win-style');
+                output.classList.add('lose-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play tie-style') {
+                output.classList.remove('tie-style');
+                output.classList.add('lose-style');
+            }
+            p.textContent = `You Lose!\r\n\r\n${computerSelection} beats ${playerSelection}.`;
             output.appendChild(p);
             displayScore();
             checkScore();
         }
         else if (playRound () === "WIN") {
             --enemyHP;
-            p.textContent = `You Win!.\r\n\r\n${playerSelection} beats ${computerSelection}.`;
+            if ((output.getAttribute('class')) === 'output output-play') {
+                output.classList.add('win-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play lose-style') {
+                output.classList.remove('lose-style');
+                output.classList.add('win-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play tie-style') {
+                output.classList.remove('tie-style');
+                output.classList.add('win-style');
+            }
+            p.textContent = `You Win!\r\n\r\n${playerSelection} beats ${computerSelection}.`;
             output.appendChild(p);
             displayScore();
             checkScore();
         }
         else {
-            tieStyle();
-            p.textContent = `You Tie!.\r\n\r\n${playerSelection} and ${computerSelection} are equal.`;
+            if ((output.getAttribute('class')) === 'output output-play') {
+                output.classList.add('tie-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play win-style') {
+                output.classList.remove('win-style');
+                output.classList.add('tie-style');
+            }
+            else if ((output.getAttribute('class')) === 'output output-play lose-style') {
+                output.classList.remove('lose-style');
+                output.classList.add('tie-style');
+            }
+            p.textContent = `You Tie!\r\n\r\n${playerSelection} and ${computerSelection} are equal.`;
             output.appendChild(p);
             displayScore();
             checkScore();
