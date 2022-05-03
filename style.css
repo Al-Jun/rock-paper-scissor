@@ -130,4 +130,9 @@ h1 {
 .win-style {
     white-space: pre;
     color: rgba(218, 187, 17);
+    text-shadow:
+        -1px -1px 0 #090909
+        , 1px -1px 0 #090909
+        , -1px 1px 0 #090909
+        , 1px 1px 0 #090909;
 }
