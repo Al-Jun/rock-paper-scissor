@@ -59,7 +59,7 @@ h1 {
     justify-content: space-around;
 }
 
-.attack,.counter,.magic {
+.attack,.counter,.charged-attack {
     padding: .5rem;
     border: 1px solid silver;
     background-color: #090909;
@@ -68,7 +68,7 @@ h1 {
     transition: all .1s ease;
 }
 
-.attack:hover,.counter:hover,.magic:hover {
+.attack:hover,.counter:hover,.charged-attack:hover {
     border: 1px solid #090909;
     background-color: silver;
     box-shadow: 0 0 1rem azure;
