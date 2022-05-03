@@ -107,7 +107,7 @@ h1 {
 }
 
 .output {
-    min-width: 400px;
+    min-width: 500px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
