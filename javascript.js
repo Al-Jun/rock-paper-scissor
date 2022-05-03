@@ -45,27 +45,22 @@ function checkScore () {
     if ((enemyHP === 0 || playerHP === 0) && enemyHP > playerHP) {
         chooseDeath = true;
         endResult = 'You Lose!';
-        loseStyle();
         gameOn();
     }
     else if ((enemyHP === 0 || playerHP === 0) && enemyHP < playerHP) {
         chooseDeath = true;
         endResult = 'You Win!';
-        winStyle();
         gameOn();
     }
     else if (enemyHP > playerHP) {
-        loseStyle();
         endResult = 'You Lose!';
         return 'You Lose!';
     }
     else if (enemyHP < playerHP) {
-        winStyle();
         endResult = 'You Win!';
         return 'You Win!';
     }
     else {
-        tieStyle();
         endResult = 'You Tie!';
         return 'You Tie!';
     }
