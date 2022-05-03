@@ -71,7 +71,7 @@ h1 {
     transition: all .1s ease;
 }
 
-.attack:hover,.counter:hover,.charged-attack:hover {
+.move:hover {
     border: 1px solid #090909;
     background-color: silver;
     box-shadow: 0 0 1rem azure;
