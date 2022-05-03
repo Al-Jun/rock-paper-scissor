@@ -90,6 +90,13 @@ function loseStyle () {
     p.style.textAlign = 'center';
 }
 
+function tieStyle () {
+    p.style.whiteSpace = 'pre';
+    p.style.color = 'white';
+    p.style.textShadow = '-1px -1px 0 #090909, 1px -1px 0 #090909, -1px 1px 0 #090909, 1px 1px 0 #090909';
+    p.style.textAlign = 'center';
+}
+
 const choice = document.querySelectorAll('.move');
 const giveUp = document.querySelector('.give-up');
 const playerHPMessage = document.querySelector('.player-hp');
