@@ -141,4 +141,9 @@ h1 {
 .lose-style {
     white-space: pre;
     color: darkgray;
+    text-shadow:
+        -1px -1px 0 #090909
+        , 1px -1px 0 #090909
+        , -1px 1px 0 #090909
+        , 1px 1px 0 #090909;
 }
