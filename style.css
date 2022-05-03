@@ -126,3 +126,7 @@ h1 {
     border-radius: .5rem;
     box-shadow: 0 0 1rem rgba(218, 165, 32, 0.733);
 }
+
+.win-style {
+    white-space: pre;
+}
